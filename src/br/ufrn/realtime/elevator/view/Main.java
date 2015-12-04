@@ -213,7 +213,7 @@ public class Main {
 			buttonUp0thFloor.setFocusable(false);
 			buttonUp0thFloor.setSelected(true);
 			buttonUp0thFloor.setBounds(455, 520, 60, 60);
-			buttonUp0thFloor.setText("↑ 0");
+			buttonUp0thFloor.setText("\u25B2 0");
 
 			buttonUp0thFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -239,7 +239,7 @@ public class Main {
 			buttonUp1stFloor.setFocusable(false);
 			buttonUp1stFloor.setSelected(true);
 			buttonUp1stFloor.setBounds(455, 455, 60, 60);
-			buttonUp1stFloor.setText("↑ 1");
+			buttonUp1stFloor.setText("\u25B2 1");
 
 			buttonUp1stFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -265,7 +265,7 @@ public class Main {
 			buttonUp2ndFloor.setFocusable(false);
 			buttonUp2ndFloor.setSelected(true);
 			buttonUp2ndFloor.setBounds(455, 390, 60, 60);
-			buttonUp2ndFloor.setText("↑ 2");
+			buttonUp2ndFloor.setText("\u25B2 2");
 
 			buttonUp2ndFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -291,7 +291,7 @@ public class Main {
 			buttonUp3rdFloor.setFocusable(false);
 			buttonUp3rdFloor.setSelected(true);
 			buttonUp3rdFloor.setBounds(455, 325, 60, 60);
-			buttonUp3rdFloor.setText("↑ 3");
+			buttonUp3rdFloor.setText("\u25B2 3");
 
 			buttonUp3rdFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -317,7 +317,7 @@ public class Main {
 			buttonDown1stFloor.setFocusable(false);
 			buttonDown1stFloor.setSelected(true);
 			buttonDown1stFloor.setBounds(520, 455, 60, 60);
-			buttonDown1stFloor.setText("↓ 1");
+			buttonDown1stFloor.setText("\u25BC 1");
 
 			buttonDown1stFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -343,7 +343,7 @@ public class Main {
 			buttonDown2ndFloor.setFocusable(false);
 			buttonDown2ndFloor.setSelected(true);
 			buttonDown2ndFloor.setBounds(520, 390, 60, 60);
-			buttonDown2ndFloor.setText("↓ 2");
+			buttonDown2ndFloor.setText("\u25BC 2");
 
 			buttonDown2ndFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -369,7 +369,7 @@ public class Main {
 			buttonDown3rdFloor.setFocusable(false);
 			buttonDown3rdFloor.setSelected(true);
 			buttonDown3rdFloor.setBounds(520, 325, 60, 60);
-			buttonDown3rdFloor.setText("↓ 3");
+			buttonDown3rdFloor.setText("\u25BC 3");
 
 			buttonDown3rdFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -395,7 +395,7 @@ public class Main {
 			buttonDown4thFloor.setFocusable(false);
 			buttonDown4thFloor.setSelected(true);
 			buttonDown4thFloor.setBounds(520, 260, 60, 60);
-			buttonDown4thFloor.setText("↓ 4");
+			buttonDown4thFloor.setText("\u25BC 4");
 
 			buttonDown4thFloor.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
@@ -523,6 +523,7 @@ public class Main {
 				}
 			});
 		}
+		
 		return buttonSelectDestination1stElevator4thFloor;
 	}
 	
@@ -602,12 +603,14 @@ public class Main {
 				}
 			});
 		}
+		
 		return buttonSelectDestination2ndElevator4thFloor;
 	}
 	
 	private JToggleButton getButton1stElevator0thFloor() {
 		if (button1stElevator0thFloor == null) {
 			button1stElevator0thFloor = new JToggleButton();
+			button1stElevator0thFloor.setEnabled(false);
 			button1stElevator0thFloor.setBounds(10, 430, 130, 60);
 			button1stElevator0thFloor.setText("0th Floor");
 		}
@@ -618,6 +621,7 @@ public class Main {
 	private JToggleButton getButton1stElevator1stFloor() {
 		if (button1stElevator1stFloor == null) {
 			button1stElevator1stFloor = new JToggleButton();
+			button1stElevator1stFloor.setEnabled(false);
 			button1stElevator1stFloor.setBounds(10, 365, 130, 60);
 			button1stElevator1stFloor.setText("1st Floor");
 		}
@@ -628,6 +632,7 @@ public class Main {
 	private JToggleButton getButton1stElevator2ndFloor() {
 		if (button1stElevator2ndFloor == null) {
 			button1stElevator2ndFloor = new JToggleButton();
+			button1stElevator2ndFloor.setEnabled(false);
 			button1stElevator2ndFloor.setBounds(10, 300, 130, 60);
 			button1stElevator2ndFloor.setText("2nd Floor");
 		}
@@ -638,6 +643,7 @@ public class Main {
 	private JToggleButton getButton1stElevator3rdFloor() {
 		if (button1stElevator3rdFloor == null) {
 			button1stElevator3rdFloor = new JToggleButton();
+			button1stElevator3rdFloor.setEnabled(false);
 			button1stElevator3rdFloor.setBounds(10, 235, 130, 60);
 			button1stElevator3rdFloor.setText("3rd Floor");
 		}
@@ -648,6 +654,7 @@ public class Main {
 	private JToggleButton getButton1stElevator4thFloor() {
 		if (button1stElevator4thFloor == null) {
 			button1stElevator4thFloor = new JToggleButton();
+			button1stElevator4thFloor.setEnabled(false);
 			button1stElevator4thFloor.setBounds(10, 170, 130, 60);
 			button1stElevator4thFloor.setText("4th Floor");
 		}
@@ -658,6 +665,7 @@ public class Main {
 	private JToggleButton getButton2ndElevator0thFloor() {
 		if (button2ndElevator0thFloor == null) {
 			button2ndElevator0thFloor = new JToggleButton();
+			button2ndElevator0thFloor.setEnabled(false);
 			button2ndElevator0thFloor.setBounds(10, 430, 130, 60);
 			button2ndElevator0thFloor.setText("0th Floor");
 		}
@@ -668,6 +676,7 @@ public class Main {
 	private JToggleButton getButton2ndElevator1stFloor() {
 		if (button2ndElevator1stFloor == null) {
 			button2ndElevator1stFloor = new JToggleButton();
+			button2ndElevator1stFloor.setEnabled(false);
 			button2ndElevator1stFloor.setBounds(10, 365, 130, 60);
 			button2ndElevator1stFloor.setText("1st Floor");
 		}
@@ -678,6 +687,7 @@ public class Main {
 	private JToggleButton getButton2ndElevator2ndFloor() {
 		if (button2ndElevator2ndFloor == null) {
 			button2ndElevator2ndFloor = new JToggleButton();
+			button2ndElevator2ndFloor.setEnabled(false);
 			button2ndElevator2ndFloor.setBounds(10, 300, 130, 60);
 			button2ndElevator2ndFloor.setText("2nd Floor");
 		}
@@ -688,6 +698,7 @@ public class Main {
 	private JToggleButton getButton2ndElevator3rdFloor() {
 		if (button2ndElevator3rdFloor == null) {
 			button2ndElevator3rdFloor = new JToggleButton();
+			button2ndElevator3rdFloor.setEnabled(false);
 			button2ndElevator3rdFloor.setBounds(10, 235, 130, 60);
 			button2ndElevator3rdFloor.setText("3rd Floor");
 		}
@@ -698,6 +709,7 @@ public class Main {
 	private JToggleButton getButton2ndElevator4thFloor() {
 		if (button2ndElevator4thFloor == null) {
 			button2ndElevator4thFloor = new JToggleButton();
+			button2ndElevator4thFloor.setEnabled(false);
 			button2ndElevator4thFloor.setBounds(10, 170, 130, 60);
 			button2ndElevator4thFloor.setText("4th Floor");
 		}

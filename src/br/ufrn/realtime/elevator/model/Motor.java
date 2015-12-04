@@ -8,11 +8,7 @@ public class Motor implements IMotor {
 	private boolean stopped;
 	
 	public Motor(int elevator) {
-		if (elevator == 1) {
-			Main.getInstance().updateLampDirection(1, true, true);
-		} else {
-			Main.getInstance().updateLampDirection(2, true, true);
-		}
+		Main.getInstance().updateLampDirection(elevator, true, true);
 		stopped = true;
 	}
 
@@ -26,31 +22,19 @@ public class Motor implements IMotor {
 
 	@Override
 	public void up(int elevator) {
-		if (elevator == 1) {
-			Main.getInstance().updateLampDirection(1, false, true);
-		} else {
-			Main.getInstance().updateLampDirection(2, false, true);
-		}
+		Main.getInstance().updateLampDirection(elevator, false, true);
 		up = true;
 	}
 
 	@Override
 	public void down(int elevator) {
-		if (elevator == 1) {
-			Main.getInstance().updateLampDirection(1, true, false);
-		} else {
-			Main.getInstance().updateLampDirection(2, true, false);
-		}
+		Main.getInstance().updateLampDirection(elevator, true, false);
 		up = false;
 	}
 	
 	@Override
 	public void stop(int elevator) {
-		if (elevator == 1) {
-			Main.getInstance().updateLampDirection(1, true, true);
-		} else {
-			Main.getInstance().updateLampDirection(2, true, true);
-		}
+		Main.getInstance().updateLampDirection(elevator, true, true);
 		stopped = true;
 	}
 	
